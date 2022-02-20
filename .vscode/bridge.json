@@ -1,0 +1,44 @@
+{
+    "Name": "bridge",
+    "Id": "f0a6bdf016a931ef5ad843327c60567775513509ca967e372cb4e867df7c14c2",
+    "Created": "2022-01-29T14:08:41.3777903Z",
+    "Scope": "local",
+    "Driver": "bridge",
+    "EnableIPv6": false,
+    "IPAM": {
+        "Driver": "default",
+        "Options": null,
+        "Config": [
+            {
+                "Subnet": "172.17.0.0/16",
+                "Gateway": "172.17.0.1"
+            }
+        ]
+    },
+    "Internal": false,
+    "Attachable": false,
+    "Ingress": false,
+    "ConfigFrom": {
+        "Network": ""
+    },
+    "ConfigOnly": false,
+    "Containers": {
+        "7de4c529ddcfff337acde6da66204d552ab8018ae0268f6d93619e4fcee788c4": {
+            "Name": "adoring_hoover",
+            "EndpointID": "e0c80eb38dc736693082b616412965881c69e8f6a82e05fccde2087fa93b55cf",
+            "MacAddress": "02:42:ac:11:00:02",
+            "IPv4Address": "172.17.0.2/16",
+            "IPv6Address": ""
+        }
+    },
+    "Options": {
+        "com.docker.network.bridge.default_bridge": "true",
+        "com.docker.network.bridge.enable_icc": "true",
+        "com.docker.network.bridge.enable_ip_masquerade": "true",
+        "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+        "com.docker.network.bridge.name": "docker0",
+        "com.docker.network.driver.mtu": "1500"
+    },
+    "Labels": {},
+    "CreatedTime": 1643465321377
+}
